@@ -88,8 +88,6 @@
     transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-
-
 .chell-image {
     width: 420px;
     rotate: 15deg;
@@ -102,6 +100,7 @@
     z-index: -11;
     top: 60%;
     filter: saturate(1);
+    z-index: -10;
     transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
@@ -114,6 +113,21 @@
     width: 400px;
     rotate: 10deg;
     -webkit-transform: scaleX(-1);
+}
+
+.link-logo {
+    position: absolute;
+    transform: translate(-50%, -180%);
+    left: 50%;
+    z-index: -10;
+    opacity: 0;
+}
+
+.link-image-div:hover .link-logo {
+    transform: translate(-65%, -280%);
+    rotate: 10deg;
+    transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+    opacity: 1;
 }
 
 .footer {
