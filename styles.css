@@ -58,7 +58,7 @@
 }
 
 .chell-image-div {
-    transform: translate(-10%, -50%);
+    transform: translate(-15%, -40%);
     position: absolute;
     left: 10%;
     z-index: -10;
@@ -69,16 +69,30 @@
 
 .chell-image-div:hover {
     filter: saturate(1.6);
-    transform: translate(-10%, -45%);
+    transform: translate(-10%, -35%);
+}
+
+.chell-logo {
+    position: absolute;
+    transform: translate(-55%, -280%);
+    left: 56%;
+    opacity: 0;
+    height: 200px;
+    z-index: 0;
+    z-index: -11;
 }
 
 .chell-image-div:hover .chell-logo {
-    
+    opacity: 1;
+    transform: translate(-55%, -365%);
+    transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
+
+
 .chell-image {
-    width: 350px;
-    rotate: 10deg;
+    width: 420px;
+    rotate: 15deg;
 }
 
 .link-image-div {
