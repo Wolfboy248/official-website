@@ -12,12 +12,83 @@
 
     <link rel="stylesheet" href="styles.css">
 
-    <body style="background-color: black;">
+    <body id="body" style="background-color: black; transition: background-color 0.2s;">
         <h1 class="header1">
-            Wolfboy248
+            <span style="pointer-events: none; user-select: none;">Wolfboy248</span>
+            <a href="index.html"><div class="demo-image-div">
+                <img class="demo-image"  src="content/images/demo.png" alt="">
+                <div class="demo-logo">
+                    <img style="width: 300px;" src="content/images/tf2logo.png" alt="">
+                </div>
+            </div></a>
+
+            <a href="index.html"><div class="chell-image-div">
+                <img class="chell-image"  src="content/images/Chell.png" alt="">
+                <div class="chell-logo">
+                    <img style="width: 300px;" src="content/images/portal2logo.png" alt="">
+                </div>
+            </div></a>
+
+            <a href="index.html"><div class="link-image-div">
+                <img class="link-image"  src="content/images/link.png" alt="">
+            </div></a>
         </h1>
-        <div class="sidebar-btn">
+
+        <footer class="footer">
+            
+        </footer>
+
+        <!-- <div id="sidebarbtn" class="sidebar-btn" style="opacity: 100;">
             <img src="content/images/3lines.png" style="width: 60px; height: 60px;">
         </div>
+
+        <div class="sidebar-bg" id="sidebarBg">
+            <a href="settings.html"><button class="sidebar-content-btn">
+                Settings <br>
+            </button></a>
+
+            <label id="darkmodebtn" class="switch" style="transition: opacity 0s; transition-delay: 0.3s;">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+
+            <label id="lightmodebtn" class="switch" style="opacity: 0; transition: opacity 0s; transition-delay: 0.3s; transition: transform; transition-delay: 0.3s; transform: translate(-1000px, -1000px);">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+
+            <span class="sidebar-footnote">
+                Copyright 2022-2023 Wolfboy248
+            </span>
+        </div> -->
     </body>
+
+    <script>
+        const sidebarbtn = document.querySelector('#sidebarbtn');
+        const sidebarBg = document.querySelector('#sidebarBg');
+        const darkmodebtn = document.querySelector('#darkmodebtn');
+        const lightmodebtn = document.querySelector('#lightmodebtn');
+
+        sidebarbtn.addEventListener('click', () => {
+            sidebarbtn.style.transform = 'translate(310px, 0px)';
+            sidebarBg.style.transform = 'translate(-30px, 0px)';
+        })
+
+        // darkmodebtn.addEventListener('click', () => {
+        //     body.style.backgroundColor = 'white';
+        //     lightmodebtn.style.opacity = '100%';
+        //     lightmodebtn.style.transform = 'translate(0px, 0px)'
+        //     darkmodebtn.style.opacity = '0';
+        //     darkmodebtn.style.transform = 'translate(-1000px, -1000px)'
+        // })
+
+        // lightmodebtn.addEventListener('click', () => {
+        //     darkmodebtn.style.opacity = '100%';
+        //     darkmodebtn.style.transform = 'translate(0px, 0px)';
+        //     lightmodebtn.style.opacity = '0';
+        //     lightmodebtn.style.transform = 'translate(-1000px, -1000px)'
+        //     body.style.backgroundColor = 'black';
+        // })
+    </script>
+
 </html>
