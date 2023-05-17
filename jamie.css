@@ -1,0 +1,44 @@
+.gaming {
+    font-size: 80px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    font-family: hylia;
+    animation: rtx-name 5s cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    animation-fill-mode: backwards;
+}
+
+.body {
+    background-image: url(content/images/zelda-bg.jpg);
+    background-size: cover;
+    margin: 0px;
+}
+
+.discord-logo-div {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.discord-logo {
+    width: 200px;
+    border-radius: 20px;
+}
+
+@font-face {
+    font-family: hylia;
+    src: url(fonts/HyliaSerifBeta-Regular.otf);
+}
+
+@keyframes rtx-name {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
