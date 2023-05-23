@@ -7,10 +7,11 @@
 
     <link rel="stylesheet" href="zelda.css">
     <link rel="stylesheet" href="zeldanoanim.css">
+    <link rel="stylesheet" href="album.css">
 </head>
     <body style="background-color: rgb(27, 27, 37); background-repeat: no-repeat; background-size: cover; margin: 0px;">
         <div class="bg"></div>
-            <a href=""><span class="hyrule-compendium-noanim">
+            <a href=""><span id="hyruleCompendiumNoanim" class="hyrule-compendium-noanim">
                 Album
             </span></a>
             <a href=""><span class="profiles-noanim">
@@ -22,5 +23,123 @@
         <div class="purah-pad-topBar-noanim">
             <div class="divider"></div>
         </div>
+
+        <!-- <span class="vids-title">
+            Clips
+        </span> -->
+
+        <!-- <video id="video" class="video" src="content/videos/2023-05-17 13-50-47.mp4"></video> -->
+        <iframe class="video" id="video" src="content/videos/2023-05-17 13-50-47.mp4" frameborder="0"></iframe>
+        <div id="blockBg" style="background-color: rgba(0, 0, 0, 0.5); position: absolute; top: 0%; left: 0%; width: 100%; height: 100%; opacity: 0; z-index: -1; transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);"></div>
+
+        <a href=""><div id="cross" class="cross">
+            <img id="crossImg" class="cross-img" src="content/images/cross.png" alt="">
+        </div></a>
+
+        <div class="page1">
+            
+            <!-- first row -->
+            <div id="imageGaming" class="image1-page1" id="imagegaming">
+                <img src="content/images/thumbnail.png" class="thumbnail">
+                <div class="vid-bg"></div>
+            </div>
+            <div id="imageGaming2" class="image2-page1">
+                <div class="vid-bg"></div>
+                <img src="content/images/gaming.png" class="thumbnail">
+            </div>
+            <div id="imageGaming3" class="image3-page1">
+                <div class="vid-bg"></div>
+                <img src="content/images/gaming.png" class="thumbnail">
+            </div>
+            <div id="imageGaming4" class="image4-page1">
+                <div class="vid-bg"></div>
+                <img src="content/images/gaming.png" class="thumbnail">
+            </div>
+
+            <!-- second row -->
+            <div id="imageGaming5" class="image5-page1" id="imagegaming">
+                <img src="content/images/gaming.png" class="thumbnail">
+                <div class="vid-bg"></div>
+            </div>
+            <div id="imageGaming6" class="image6-page1">
+                <div class="vid-bg"></div>
+                <img src="content/images/gaming.png" class="thumbnail">
+            </div>
+            <div id="imageGaming7" class="image7-page1">
+                <div class="vid-bg"></div>
+                <img src="content/images/gaming.png" class="thumbnail">
+            </div>
+            <div id="imageGaming8" class="image8-page1">
+                <div class="vid-bg"></div>
+                <img src="content/images/gaming.png" class="thumbnail">
+            </div>
+
+            <!-- third row -->
+            <div id="imageGaming9" class="image9-page1" id="imagegaming">
+                <img src="content/images/gaming.png" class="thumbnail">
+                <div class="vid-bg"></div>
+            </div>
+            <div id="imageGaming10" class="image10-page1">
+                <div class="vid-bg"></div>
+                <img src="content/images/gaming.png" class="thumbnail">
+            </div>
+            <div id="imageGaming11" class="image11-page1">
+                <div class="vid-bg"></div>
+                <img src="content/images/gaming.png" class="thumbnail">
+            </div>
+            <div id="imageGaming12" class="image12-page1">
+                <div class="vid-bg"></div>
+                <img src="content/images/gaming.png" class="thumbnail">
+            </div>
+        </div>
+
+        <script>
+            const blockBg = document.querySelector('#blockBg');
+            const imageGaming = document.querySelector('#imageGaming');
+            const imageGaming2 = document.querySelector('#imageGaming2');
+            const video = document.querySelector('#video');
+            const cross = document.querySelector('#cross');
+
+            imageGaming.addEventListener('click', () => {
+                blockBg.style.opacity = '1';
+
+                // image outros
+                imageGaming.style.opacity = '0';
+                imageGaming.style.top = '32%';
+                imageGaming2.style.opacity = '0';
+                imageGaming2.style.top = '32%';
+                imageGaming3.style.opacity = '0';
+                imageGaming3.style.top = '32%';
+                imageGaming4.style.opacity = '0';
+                imageGaming4.style.top = '32%';
+
+                imageGaming5.style.opacity = '0';
+                imageGaming5.style.top = '60%';
+                imageGaming6.style.opacity = '0';
+                imageGaming6.style.top = '60%';
+                imageGaming7.style.opacity = '0';
+                imageGaming7.style.top = '60%';
+                imageGaming8.style.opacity = '0';
+                imageGaming8.style.top = '60%';
+
+                imageGaming9.style.opacity = '0';
+                imageGaming8.style.top = '87%';
+                imageGaming10.style.opacity = '0';
+                imageGaming10.style.top = '87%';
+                imageGaming11.style.opacity = '0';
+                imageGaming11.style.top = '87%';
+                imageGaming12.style.opacity = '0';
+                imageGaming12.style.top = '87%';
+                // end image outros
+
+                video.style.width = '60%';
+                video.style.height = '68%';
+                blockBg.style.zIndex = '1';
+
+                cross.style.opacity = '95%';
+                cross.style.left = '97%';
+            })
+        </script>
+
     </body>
 </html>

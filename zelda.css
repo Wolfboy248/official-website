@@ -8,6 +8,27 @@
     animation-fill-mode: backwards;
 }
 
+.cross {
+    position:fixed;
+    transform: translate(-50%, -50%);
+    left: 120%;
+    width: 4%;
+    top: 7%;
+    z-index: 100;
+    user-select: none;
+    overflow-x: hidden;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.cross-img {
+    filter: drop-shadow(0 0 0.15rem rgb(255, 255, 255));
+    width: 100%;
+    z-index: 100;
+    overflow: hidden;
+}
+
 .bg {
     background-image: url(content/images/zelda-bg.jpg);
     background-repeat: no-repeat;
@@ -15,6 +36,52 @@
     animation: bg-intro 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
     display: block;
 }
+
+.vids-title {
+    font-family: zelda-bold;
+    font-size: 30px;
+    color: rgb(136, 144, 233);
+    text-shadow: 0px 0px 8px rgb(93, 106, 255);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 13%;
+    left: 50%;
+    user-select: none;
+}
+
+/* .arrow {
+    width: 5%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 96%;
+    top: 58%;
+    filter: drop-shadow(0 0 0.75rem rgb(41, 116, 255));
+    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+} */
+
+.arrow:hover {
+    width: 5.5%;
+}
+
+.thumbnail {
+    width: 98%;
+    height: 96%;
+    position: absolute;
+    top: 2%;
+    left: 1%;
+    user-select: none;
+}
+
+.vid-bg {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(49, 44, 88);
+    border-radius: 2px;
+    transition: all 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    /* box-shadow: 0px 0px 8px rgb(49, 44, 88); */
+}
+
+
 
 .divider {
     width: 100%;
